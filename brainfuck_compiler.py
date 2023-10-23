@@ -108,6 +108,9 @@ while compiling_process:
     elif "mov_end!" in current_line:
         compiled_code += ">" * 30000
 
+    elif "random_cell_value!" in current_line:
+        compiled_code += "+" * bfca.random_value(0,200)
+
     if not current_line:
         break
 print("- - - - - - - - - - - - - - - -Compiled code!- - - - - - - - - - - - - - - - ")
