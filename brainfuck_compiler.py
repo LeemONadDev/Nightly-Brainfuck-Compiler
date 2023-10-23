@@ -105,6 +105,9 @@ while compiling_process:
     elif "lib_func_dump_c_end!" in current_line:
         lib_func_dump_c_end = True
 
+    elif "mov_end!" in current_line:
+        compiled_code += ">" * 30000
+
     if not current_line:
         break
 print("- - - - - - - - - - - - - - - -Compiled code!- - - - - - - - - - - - - - - - ")
