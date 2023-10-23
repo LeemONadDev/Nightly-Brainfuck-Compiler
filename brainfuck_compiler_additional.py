@@ -18,3 +18,7 @@ def lib_func_load(lib_path):
     else:
         pass
     return lib_functions
+
+def random_value(a,b):
+    import random
+    return random.randint(a,b)
