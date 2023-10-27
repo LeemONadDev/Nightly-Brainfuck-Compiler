@@ -7,7 +7,6 @@ try:
     inc_lib = Args[2]
 except:
     inc_lib = ""
-
 #Nodet (Nightly) 1.3bfc ---> to Brainf**k compiler
 
 #Switchers
@@ -113,6 +112,7 @@ while compiling_process:
 
     if not current_line:
         break
+f.close()
 print("- - - - - - - - - - - - - - - -Compiled code!- - - - - - - - - - - - - - - - ")
 print(compiled_code)
 print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
